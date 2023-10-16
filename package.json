@@ -1,0 +1,33 @@
+{
+  "name": "exercicio_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "sass": "sass source/styles/main.scss build/styles/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A97Campos/exercicio_gulp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A97Campos/exercicio_gulp/issues"
+  },
+  "homepage": "https://github.com/A97Campos/exercicio_gulp#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.3"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}
