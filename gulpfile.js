@@ -28,8 +28,14 @@ function compilaSass() {
     .pipe(gulp.dest("./build/styles"));
 }
 
+exports.compilaSass = compilaSass;
+exports.images = comprimeImagens;
+exports.comprimeJavaScript = comprimeJavaScript;
+
 exports.default = function() {
     gulp.watch("./source/styles/*.scss", {ignoreInitial: false}, gulp.series(compilaSass));
+
     gulp.watch("./source/scripts/*.js", {ignoreInitial: false}, gulp.series(comprimeJavaScript));
+
     gulp.watch("./source/images/*", {ignoreInitial: false}, gulp.series(comprimeImagens));
 }
